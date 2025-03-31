@@ -1,0 +1,11 @@
+{% load static %}
+<div class="col-md-4 mb-4">
+    <div class="card h-100">
+        <img src="{% static 'images/'|add:image %}" class="card-img-top" alt="{{ title }}" onerror="this.src='{% static 'images/no-image.jpg' %}'">
+        <div class="card-body">
+            <h5 class="card-title">{{ title }}</h5>
+            <p class="card-text">Цена: {{ price }} ₽</p>
+            <a href="#" class="btn btn-primary">Подробнее</a>
+        </div>
+    </div>
+</div> 

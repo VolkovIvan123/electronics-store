@@ -1,0 +1,21 @@
+{% extends 'main/base.html' %}
+
+{% block title %}Главная - Магазин электроники{% endblock %}
+
+{% block content %}
+<div class="row">
+    <div class="col-md-12">
+        <h1 class="text-center mb-4">Добро пожаловать в магазин электроники</h1>
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">Популярные товары</h5>
+                <div class="row">
+                    {% include 'main/product_card.html' with title="Смартфон" price="29999" image="phone.jpg" %}
+                    {% include 'main/product_card.html' with title="Ноутбук" price="49999" image="laptop.jpg" %}
+                    {% include 'main/product_card.html' with title="Планшет" price="19999" image="tablet.jpg" %}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %} 
