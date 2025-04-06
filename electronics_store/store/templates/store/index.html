@@ -1,0 +1,46 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Магазин электроники</title>
+    <link rel="stylesheet" href="{% static 'store/css/style.css' %}">
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="sale-badge">SALE</div>
+            <img src="{% static 'store/images/laptop.jpg' %}" alt="Ноутбук">
+            <div class="card-content">
+                <p class="card-title">Ноутбук Gaming Pro</p>
+                <button class="save-btn">Сохранить</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="{% static 'store/images/smartphone.jpg' %}" alt="Смартфон">
+            <div class="card-content">
+                <p class="card-title">Смартфон Ultra</p>
+                <button class="save-btn">Сохранить</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="{% static 'store/images/headphones.jpg' %}" alt="Наушники">
+            <div class="card-content">
+                <p class="card-title">Беспроводные наушники</p>
+                <button class="save-btn">Сохранить</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="{% static 'store/images/smartwatch.jpg' %}" alt="Умные часы">
+            <div class="card-content">
+                <p class="card-title">Умные часы Pro</p>
+                <button class="save-btn">Сохранить</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html> 
